@@ -32,7 +32,7 @@ RUN pip3 install \
   cfn-lint
 
 RUN npm install -g \
-  aws-organization-formation@0.9.18
+  aws-organization-formation@1.0.2
 
 # jq
 RUN curl -sL https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -o jq
