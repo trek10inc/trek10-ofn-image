@@ -20,7 +20,7 @@ RUN cd /opt/Python-3.9.6 && ./configure --enable-optimizations
 RUN cd /opt/Python-3.9.6 && make install
 
 # NodeJS
-RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_18.x | bash -
 RUN yum install -y \
   nodejs
 
@@ -32,7 +32,7 @@ RUN pip3 install \
   cfn-lint
 
 RUN npm install -g \
-  aws-organization-formation@1.0.2
+  aws-organization-formation@1.0.9
 
 # jq
 RUN curl -sL https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -o jq
