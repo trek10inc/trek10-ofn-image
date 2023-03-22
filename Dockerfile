@@ -20,7 +20,7 @@ RUN cd /opt/Python-3.9.6 && ./configure --enable-optimizations
 RUN cd /opt/Python-3.9.6 && make install
 
 # NodeJS
-RUN curl -sL https://rpm.nodesource.com/setup_18.x | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_16.x | bash -
 RUN yum install -y \
   nodejs
 
